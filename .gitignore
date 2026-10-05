@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+#Avoid files with caches
+#__pycache__/
+
 *.py[codz]
 *$py.class
 
@@ -77,7 +79,8 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+# Don't allow checkpoints
+#.ipynb_checkpoints
 
 # IPython
 profile_default/
