@@ -7,7 +7,13 @@
 
 | Data set | Source (URL) | Downloaded on | Licence | Included in repo? |
 |----------|--------------|---------------|---------|-------------------|
-| _TODO_   | _TODO_       | _TODO_        | _TODO_  | yes / no — fetched by `01_get_data.ipynb` |
+| Horse racing — `horses_<year>.csv`, `races_<year>.csv`, 2010–2020 (22 files) | Kaggle, [hwaitt/horse-racing](https://www.kaggle.com/datasets/hwaitt/horse-racing) | _TODO_ | _TODO: copy from the Kaggle page or `raw/dataset-metadata.json`_ | _TODO: yes if every file is under 100 MB and the licence allows it; otherwise no — fetched by `01_get_data.ipynb`_ |
+
+### How to obtain the data
+
+Either run `code/01_get_data.ipynb` with a Kaggle API token (instructions at the top of the notebook), or download
+the 22 files by hand from the dataset page (*Download*, sign-in required) and put them in `data/raw/` unchanged.
+The notebook then lists their sizes and row counts.
 
 If licence or size prevents including the data (Requirement 4.15), commit only the download
 code and describe here exactly how to obtain the data and what the licence permits.

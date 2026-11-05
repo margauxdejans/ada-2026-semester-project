@@ -224,3 +224,7 @@ __marimo__/
 
 # macOS
 .DS_Store
+
+# Kaggle API key: never commit it
+kaggle.json
+access_token

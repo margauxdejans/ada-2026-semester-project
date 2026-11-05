@@ -16,6 +16,30 @@ DATA_RAW = ROOT / "data" / "raw"
 DATA_PROCESSED = ROOT / "data" / "processed"
 FIGURES = ROOT / "figures"
 
+# --- Data -----------------------------------------------------------------
+# Years of the Kaggle dataset hwaitt/horse-racing used in the project.
+YEARS = list(range(2010, 2021))  # 2010–2020 inclusive
+
+
+def load_raw(kind: str, years=None):
+    """Load and stack the raw yearly files for `kind` ("horses" or "races").
+
+    Reads data/raw/<kind>_<year>.csv for each year (written by 01_get_data.ipynb)
+    and returns one DataFrame with a `file_year` column saying which file each row came from.
+    """
+    import pandas as pd
+
+    if kind not in ("horses", "races"):
+        raise ValueError(f"kind must be 'horses' or 'races', not {kind!r}")
+    frames = []
+    for year in years or YEARS:
+        path = DATA_RAW / f"{kind}_{year}.csv"
+        if not path.exists():
+            raise FileNotFoundError(f"{path} not found: run code/01_get_data.ipynb first")
+        frames.append(pd.read_csv(path, low_memory=False).assign(file_year=year))
+    return pd.concat(frames, ignore_index=True)
+
+
 # --- Reproducibility -------------------------------------------------------
 SEED = 42
 
