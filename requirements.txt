@@ -1,0 +1,9 @@
+# Packages needed to run the code (Requirement 4.10).
+# Install with:  pip install -r requirements.txt
+# Add or remove packages as the project develops; keep this list in sync with the imports.
+numpy
+pandas
+scikit-learn
+matplotlib
+jupyter
+jinja2  # needed by pandas DataFrame.to_latex (helpers.save_table)
