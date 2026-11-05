@@ -6,4 +6,5 @@ pandas
 scikit-learn
 matplotlib
 jupyter
+kaggle>=2.0  # downloads the data in 01_get_data.ipynb (needs a Kaggle API token)
 jinja2  # needed by pandas DataFrame.to_latex (helpers.save_table)
