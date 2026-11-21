@@ -51,7 +51,8 @@ for nb in code/0*.ipynb; do jupyter nbconvert --to notebook --execute --inplace 
 
 - Approximate total running time: _TODO (e.g. ~5 minutes)_ on the provided Nuvolos workspace.
 - Resources beyond the provided workspace: _TODO: none / describe them, and what each result was run on._
-- API keys: _TODO: none / name the key needed and the environment variable it is read from._
+- API keys: a free Kaggle API token, only if the data is not already in `data/raw/`. Set it as the environment variable
+  `KAGGLE_API_TOKEN` or save it to `~/.kaggle/access_token` — never inside this repository.
 
 ## What it produces
 
@@ -59,7 +60,8 @@ _TODO: list the files written to `data/processed/` and `figures/`, and which fig
 
 ## Where the data came from
 
-_TODO: source, URL, download date and licence. Details are in [`data/README.md`](data/README.md)._
+Horse racing results, 2010–2020 (`horses_<year>.csv` and `races_<year>.csv`), from the Kaggle dataset
+[hwaitt/horse-racing](https://www.kaggle.com/datasets/hwaitt/horse-racing). Licence and download details: [`data/README.md`](data/README.md).
 
 ## Recording
 
