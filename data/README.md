@@ -7,7 +7,12 @@
 
 | Data set | Source (URL) | Downloaded on | Licence | Included in repo? |
 |----------|--------------|---------------|---------|-------------------|
-| Horse racing — `horses_<year>.csv`, `races_<year>.csv`, 2010–2020 (22 files) | Kaggle, [hwaitt/horse-racing](https://www.kaggle.com/datasets/hwaitt/horse-racing) | _TODO_ | _TODO: copy from the Kaggle page or `raw/dataset-metadata.json`_ | _TODO: yes if every file is under 100 MB and the licence allows it; otherwise no — fetched by `01_get_data.ipynb`_ |
+| Horse racing — `horses_<year>.csv`, `races_<year>.csv`, 2010–2020 (22 files) | Kaggle, [hwaitt/horse-racing](https://www.kaggle.com/datasets/hwaitt/horse-racing) (uploader: hwaitt; scraped from public websites) | 21 Nov 2026 | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): non-commercial use only | No: not redistributed in this repository (scraped data, Requirement 4.15). Fetched by `01_get_data.ipynb` |
+
+
+Data: "Horse Racing" by hwaitt, Kaggle, licensed CC BY-NC 4.0. Used here for non-commercial, academic purposes only.
+The raw files are not included in this repository; `code/01_get_data.ipynb` downloads them.
+The licence record saved by Kaggle's API is in `raw/dataset-metadata.json`.
 
 ### How to obtain the data
 
