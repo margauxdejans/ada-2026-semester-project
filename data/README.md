@@ -10,7 +10,7 @@
 | Horse racing — `horses_<year>.csv`, `races_<year>.csv`, 2010–2020 (22 files) | Kaggle, [hwaitt/horse-racing](https://www.kaggle.com/datasets/hwaitt/horse-racing) (uploader: hwaitt; scraped from public websites) | 21 Nov 2026 | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): non-commercial use only | No: not redistributed in this repository (scraped data, Requirement 4.15). Fetched by `01_get_data.ipynb` |
 
 
-Data: "Horse Racing" by hwaitt, Kaggle, licensed CC BY-NC 4.0. Used here for non-commercial, academic purposes only.
+Data: "Horse Racing" by hwaitt, Kaggle, licensed CC BY-NC 4.0. The licence allows sharing and adapting the data with attribution, for non-commercial purposes only; it is used here for academic work only.
 The raw files are not included in this repository; `code/01_get_data.ipynb` downloads them.
 The licence record saved by Kaggle's API is in `raw/dataset-metadata.json`.
 
@@ -19,12 +19,6 @@ The licence record saved by Kaggle's API is in `raw/dataset-metadata.json`.
 Either run `code/01_get_data.ipynb` with a Kaggle API token (instructions at the top of the notebook), or download
 the 22 files by hand from the dataset page (*Download*, sign-in required) and put them in `data/raw/` unchanged.
 The notebook then lists their sizes and row counts.
-
-If licence or size prevents including the data (Requirement 4.15), commit only the download
-code and describe here exactly how to obtain the data and what the licence permits.
-
-Keep files under 100 MB (GitHub's limit), and use lowercase names without spaces or accents,
-e.g. `prices_2020_2024.csv`.
 
 ## Cleaning log
 

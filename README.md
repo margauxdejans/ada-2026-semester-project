@@ -2,7 +2,7 @@
 
 End-of-semester project (Autumn 2026) for the Advanced Data Analytics course at HEC Lausanne.
 
-**Author:** _TODO: full name, as registered at the University_
+**Author:** _TODO: Margaux de Jans, as registered at the University_
 
 ## What the project does
 

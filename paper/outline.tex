@@ -19,7 +19,17 @@
 % TODO
 
 \section{Data set: source and cleaning}
-% TODO: where the data came from, its licence, and every cleaning step (see data/README.md).
+\subsection{Source and licence}
+The data come from the Kaggle dataset ``Horse Racing'' published by the user hwaitt~\cite{hwaitt_horse}, which collects horse races from 1990 to 2020. According to its description, the uploader gathered the records from public websites that require no sign-up or login. The dataset has one pair of files per year, a races file and a horses file. I use the 22 files covering 2010 to 2020. I downloaded them on 21 November 2026 with the Kaggle API (\texttt{code/01\_get\_data.ipynb}) and saved them unchanged.
+
+The dataset is released under the Creative Commons Attribution-NonCommercial 4.0 licence (CC BY-NC 4.0). This project is academic and non-commercial, so it falls within that licence. Because the records were scraped from third-party websites, the repository does not redistribute the raw files. It contains the download script and Kaggle's licence record (\texttt{data/raw/dataset-metadata.json}) instead, and \texttt{data/README.md} explains how to obtain the files.
+
+\subsection{Content}
+The 22 files hold about 182,000 races and about 1.79 million runner records, roughly 336 MB in total. Each year has between about 14,800 and 17,550 races, so an average race has close to ten runners.
+
+Each row of a races file is one race, with its course, date, distance, going, class and prize money (18 columns). Each row of a horses file is one runner in one race (27 columns), linked to its race by the race identifier \texttt{rid}. A runner's record holds its age, draw, weight carried, official rating, trainer, jockey, parents, starting price and finishing position, together with the indicators \texttt{res\_win} and \texttt{res\_place}, which serve as the two targets. The dataset also contains a file \texttt{forward.csv}. It covers only September to December 2020 and has no race outcomes, so I leave it out.
+
+% TODO: subsection on cleaning, once 02_clean.ipynb is done (see data/README.md).
 
 \section{Implementation}
 % TODO: how the code in code/ is organised and run.
@@ -37,7 +47,8 @@
 \section{Conclusion}
 % TODO
 
-% References: \bibliographystyle{siamplain} \bibliography{references}
+\bibliographystyle{siamplain} 
+\bibliography{references}
 
 \appendix
 \section{Declaration of tools used}
